@@ -66,6 +66,7 @@ def actions(board):
     return actions
 
 
+
 # Does not modify the original board, returns a separate board 
 # If action is not a valid action for the board, your program should raise an exception.
 # The board you return is the board that results from applying the action by whomever is the player. 
