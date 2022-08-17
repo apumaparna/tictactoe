@@ -87,6 +87,15 @@ def result(board, action):
 
     return new_board
 
+# Helper functions: 
+def check_diagonal(board): 
+    raise NotImplementedError 
+
+def check_vertical(board): 
+    raise NotImplementedError
+
+def check_horizonal(board): 
+    raise NotImplementedError
 
 
 # If the X player has won the game, your function should return X. 
