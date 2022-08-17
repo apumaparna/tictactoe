@@ -52,6 +52,7 @@ def player(board):
 # Possible moves are any cells on the board that do not already have an X or an O in them.
 # Any return value is acceptable if a terminal board is provided as input.
 def actions(board):
+    
     """
     Returns set of all possible actions (i, j) available on the board.
     """
