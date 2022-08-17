@@ -52,7 +52,7 @@ def player(board):
 # Possible moves are any cells on the board that do not already have an X or an O in them.
 # Any return value is acceptable if a terminal board is provided as input.
 def actions(board):
-    
+
     """
     Returns set of all possible actions (i, j) available on the board.
     """
@@ -104,7 +104,14 @@ def terminal(board):
     """
     Returns True if game is over, False otherwise.
     """
-    raise NotImplementedError
+    if winner(board) != None: 
+        # Check if all the cells are filled up
+        for i in range(len(board)): 
+            for j in range(len(board[i])): 
+                if board[i][j] == EMPTY: 
+                    return False
+
+    return True
 
 # Accepts only terminal board 
 def utility(board):
